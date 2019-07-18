@@ -41,31 +41,56 @@ public class SeedData implements CommandLineRunner
         Agents a11 = new Agents("Ivan", "Torento", 0.15, "008-22544166", "");
         Agents a12 = new Agents("Benjamin", "Hampshair", 0.11, "008-22536178", "");
 
-        Customers c01 = new Customers("Holmes", "London", "London", "UK", "2", 6000.00, 5000.00, 7000.00, 4000.00, "BBBBBBB", a03);
-        Customers c02 = new Customers("Micheal", "New York", "New York", "USA", "2", 3000.00, 5000.00, 2000.00, 6000.00, "CCCCCCC", a08);
-        Customers c03 = new Customers("Albert", "New York", "New York", "USA", "3", 5000.00, 7000.00, 6000.00, 6000.00, "BBBBSBB", a08);
-        Customers c04 = new Customers("Ravindran", "Bangalore", "Bangalore", "India", "2", 5000.00, 7000.00, 4000.00, 8000.00, "AVAVAVA", a11);
-        Customers c05 = new Customers("Cook", "London", "London", "UK", "2", 4000.00, 9000.00, 7000.00, 6000.00, "FSDDSDF", a06);
-        Customers c06 = new Customers("Stuart", "London", "London", "UK", "1", 6000.00, 8000.00, 3000.00, 11000.00, "GFSGERS", a03);
-        Customers c07 = new Customers("Bolt", "New York", "New York", "USA", "3", 5000.00, 7000.00, 9000.00, 3000.00, "DDNRDRH", a08);
-        Customers c08 = new Customers("Fleming", "Brisban", "Brisban", "Australia", "2", 7000.00, 7000.00, 9000.00, 5000.00, "NHBGVFC", a05);
-        Customers c09 = new Customers("Jacks", "Brisban", "Brisban", "Australia", "1", 7000.00, 7000.00, 7000.00, 7000.00, "WERTGDF", a05);
-        Customers c10 = new Customers("Yearannaidu", "Chennai", "Chennai", "India", "1", 8000.00, 7000.00, 7000.00, 8000.00, "ZZZZBFV", a10);
-        Customers c11 = new Customers("Sasikant", "Mumbai", "Mumbai", "India", "1", 7000.00, 11000.00, 7000.00, 11000.00, "147-25896312", a02);
-        Customers c12 = new Customers("Ramanathan", "Chennai", "Chennai", "India", "1", 7000.00, 11000.00, 9000.00, 9000.00, "GHRDWSD", a10);
-        Customers c13 = new Customers("Avinash", "Mumbai", "Mumbai", "India", "2", 7000.00, 11000.00, 9000.00, 9000.00, "113-12345678",a02);
-        Customers c14 = new Customers("Winston", "Brisban", "Brisban", "Australia", "1", 5000.00, 8000.00, 7000.00, 6000.00, "AAAAAAA", a05);
-        Customers c15 = new Customers("Karl", "London", "London", "UK", "0", 4000.00, 6000.00, 7000.00, 3000.00, "AAAABAA", a06);
-        Customers c16 = new Customers("Shilton", "Torento", "Torento", "Canada", "1", 10000.00, 7000.00, 6000.00, 11000.00, "DDDDDDD", a04);
-        Customers c17 = new Customers("Charles", "Hampshair", "Hampshair", "UK", "3", 6000.00, 4000.00, 5000.00, 5000.00, "MMMMMMM", a09);
-        Customers c18 = new Customers("Srinivas", "Bangalore", "Bangalore", "India", "2", 8000.00, 4000.00, 3000.00, 9000.00, "AAAAAAB", a07);
-        Customers c19 = new Customers("Steven", "San Jose", "San Jose", "USA", "1", 5000.00, 7000.00, 9000.00, 3000.00, "KRFYGJK", a12);
-        Customers c20 = new Customers("Karolina", "Torento", "Torento", "Canada", "1", 7000.00, 7000.00, 9000.00, 5000.00, "HJKORED", a04);
-        Customers c21 = new Customers("Martin", "Torento", "Torento", "Canada", "2", 8000.00, 7000.00, 7000.00, 8000.00, "MJYURFD", a04);
-        Customers c22 = new Customers("Ramesh", "Mumbai", "Mumbai", "India", "3", 8000.00, 7000.00, 3000.00, 12000.00, "Phone No", a02);
-        Customers c23 = new Customers("Rangarappa", "Bangalore", "Bangalore", "India", "2", 8000.00, 11000.00, 7000.00, 12000.00, "AAAATGF", a01);
-        Customers c24 = new Customers("Venkatpati", "Bangalore", "Bangalore", "India", "2", 8000.00, 11000.00, 7000.00, 12000.00, "JRTVFDD", a07);
-        Customers c25 = new Customers("Sundariya", "Chennai", "Chennai", "India", "3", 7000.00, 11000.00, 7000.00, 11000.00, "PPHGRTS", a10);
+        Customers c01 = new Customers("Holmes", "London", "London", "UK", "2", 6000.00, 5000.00, 7000.00, 4000.00,
+                "BBBBBBB", a03);
+        Customers c02 = new Customers("Micheal", "New York", "New York", "USA", "2", 3000.00, 5000.00, 2000.00,
+                6000.00, "CCCCCCC", a08);
+        Customers c03 = new Customers("Albert", "New York", "New York", "USA", "3", 5000.00, 7000.00, 6000.00,
+                6000.00, "BBBBSBB", a08);
+        Customers c04 = new Customers("Ravindran", "Bangalore", "Bangalore", "India", "2", 5000.00, 7000.00, 4000.00,
+                8000.00, "AVAVAVA", a11);
+        Customers c05 = new Customers("Cook", "London", "London", "UK", "2", 4000.00, 9000.00, 7000.00, 6000.00,
+                "FSDDSDF", a06);
+        Customers c06 = new Customers("Stuart", "London", "London", "UK", "1", 6000.00, 8000.00, 3000.00, 11000.00,
+                "GFSGERS", a03);
+        Customers c07 = new Customers("Bolt", "New York", "New York", "USA", "3", 5000.00, 7000.00, 9000.00, 3000.00,
+                "DDNRDRH", a08);
+        Customers c08 = new Customers("Fleming", "Brisban", "Brisban", "Australia", "2", 7000.00, 7000.00, 9000.00,
+                5000.00, "NHBGVFC", a05);
+        Customers c09 = new Customers("Jacks", "Brisban", "Brisban", "Australia", "1", 7000.00, 7000.00, 7000.00,
+                7000.00, "WERTGDF", a05);
+        Customers c10 = new Customers("Yearannaidu", "Chennai", "Chennai", "India", "1", 8000.00, 7000.00, 7000.00,
+                8000.00, "ZZZZBFV", a10);
+        Customers c11 = new Customers("Sasikant", "Mumbai", "Mumbai", "India", "1", 7000.00, 11000.00, 7000.00,
+                11000.00, "147-25896312", a02);
+        Customers c12 = new Customers("Ramanathan", "Chennai", "Chennai", "India", "1", 7000.00, 11000.00, 9000.00,
+                9000.00, "GHRDWSD", a10);
+        Customers c13 = new Customers("Avinash", "Mumbai", "Mumbai", "India", "2", 7000.00, 11000.00, 9000.00,
+                9000.00, "113-12345678", a02);
+        Customers c14 = new Customers("Winston", "Brisban", "Brisban", "Australia", "1", 5000.00, 8000.00, 7000.00,
+                6000.00, "AAAAAAA", a05);
+        Customers c15 = new Customers("Karl", "London", "London", "UK", "0", 4000.00, 6000.00, 7000.00, 3000.00,
+                "AAAABAA", a06);
+        Customers c16 = new Customers("Shilton", "Torento", "Torento", "Canada", "1", 10000.00, 7000.00, 6000.00,
+                11000.00, "DDDDDDD", a04);
+        Customers c17 = new Customers("Charles", "Hampshair", "Hampshair", "UK", "3", 6000.00, 4000.00, 5000.00,
+                5000.00, "MMMMMMM", a09);
+        Customers c18 = new Customers("Srinivas", "Bangalore", "Bangalore", "India", "2", 8000.00, 4000.00, 3000.00,
+                9000.00, "AAAAAAB", a07);
+        Customers c19 = new Customers("Steven", "San Jose", "San Jose", "USA", "1", 5000.00, 7000.00, 9000.00,
+                3000.00, "KRFYGJK", a12);
+        Customers c20 = new Customers("Karolina", "Torento", "Torento", "Canada", "1", 7000.00, 7000.00, 9000.00,
+                5000.00, "HJKORED", a04);
+        Customers c21 = new Customers("Martin", "Torento", "Torento", "Canada", "2", 8000.00, 7000.00, 7000.00,
+                8000.00, "MJYURFD", a04);
+        Customers c22 = new Customers("Ramesh", "Mumbai", "Mumbai", "India", "3", 8000.00, 7000.00, 3000.00, 12000.00
+                , "Phone No", a02);
+        Customers c23 = new Customers("Rangarappa", "Bangalore", "Bangalore", "India", "2", 8000.00, 11000.00,
+                7000.00, 12000.00, "AAAATGF", a01);
+        Customers c24 = new Customers("Venkatpati", "Bangalore", "Bangalore", "India", "2", 8000.00, 11000.00,
+                7000.00, 12000.00, "JRTVFDD", a07);
+        Customers c25 = new Customers("Sundariya", "Chennai", "Chennai", "India", "3", 7000.00, 11000.00, 7000.00,
+                11000.00, "PPHGRTS", a10);
 
         Orders o01 = new Orders(1000.00, 600.00, c13, "SOD");
         Orders o02 = new Orders(3000.00, 500.00, c19, "SOD");
