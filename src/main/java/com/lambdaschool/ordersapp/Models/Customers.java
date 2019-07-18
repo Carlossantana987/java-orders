@@ -29,7 +29,7 @@ public class Customers
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "AGENTCODE",
             nullable = false)
-    @JsonIgnoreProperties({"custumers", "HibernateLazyInitializer"})
+    @JsonIgnoreProperties({"custumers", "hibernateLazyInitializer"})
     private Agents agents;
 
     @OneToMany(mappedBy = "customers",
@@ -178,6 +178,16 @@ public class Customers
     public void setAgents(Agents agents)
     {
         this.agents = agents;
+    }
+
+    public List<Orders> getOrders()
+    {
+        return orders;
+    }
+
+    public void setOrders(List<Orders> orders)
+    {
+        this.orders = orders;
     }
 }
 

@@ -1,5 +1,6 @@
 package com.lambdaschool.ordersapp.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
@@ -25,16 +26,21 @@ public class Orders
     @JsonIgnoreProperties({"orders", "HibernateLazyInitializer"})
     private Customers customers;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "AGENTCODE", nullable = false)
+    private Agents agents;
+
     public Orders()
     {
     }
 
-    public Orders(double ORDAMOUNT, double ADVANCEAMOUNT, String ORDDESCRIPTION, Customers customers)
+
+    public Orders(double ORDAMOUNT, double ADVANCEAMOUNT, Customers customers, String ORDDESCRIPTION )
     {
         this.ORDAMOUNT = ORDAMOUNT;
         this.ADVANCEAMOUNT = ADVANCEAMOUNT;
-        this.ORDDESCRIPTION = ORDDESCRIPTION;
         this.customers = customers;
+        this.ORDDESCRIPTION = ORDDESCRIPTION;
     }
 
     public long getORDERNUM()
@@ -86,4 +92,15 @@ public class Orders
     {
         this.customers = customers;
     }
+
+    public Agents getAgents()
+    {
+        return agents;
+    }
+
+    public void setAgents(Agents agents)
+    {
+        this.agents = agents;
+    }
+
 }

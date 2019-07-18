@@ -25,15 +25,20 @@ public class Agents
     @OneToMany(mappedBy = "agents",
             cascade = CascadeType.ALL,
             orphanRemoval = true)
-    @JsonIgnoreProperties("agent")
+    @JsonIgnoreProperties({"agents"})
     private List<Customers> customers = new ArrayList<>();
+
+    @OneToMany(mappedBy = "agents",
+                cascade = CascadeType.ALL,
+                orphanRemoval = true)
+    @JsonIgnoreProperties({"agents"})
+    private List<Orders> orders = new ArrayList<>();
 
     public Agents()
     {
     }
 
-    public Agents(String AGENTNAME, String WORKINGAREA, double COMMISSION, String PHONE, String COUNTRY,
-                  List<Customers> customers)
+    public Agents(String AGENTNAME, String WORKINGAREA, double COMMISSION, String PHONE, String COUNTRY)
     {
         this.AGENTNAME = AGENTNAME;
         this.WORKINGAREA = WORKINGAREA;
